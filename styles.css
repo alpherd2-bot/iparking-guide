@@ -1,2 +1,80 @@
 :root{--navy:#17364a;--teal:#12827f;--ink:#243247;--muted:#5f6e7b;--paper:#f6f3ec;--white:#fff;--line:#dce4e5;--yellow:#fff4c8;font-size:18px}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:1rem}body{margin:0;color:var(--ink);background:var(--paper);font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.75;word-break:keep-all}a{color:inherit}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;background:#fff;padding:12px;z-index:10}.hero{background:var(--navy);color:white}.hero-inner{max-width:900px;margin:auto;padding:56px 24px 48px}.eyebrow{margin:0 0 8px;color:#bde4e3;font-size:1rem;font-weight:800}.hero h1{margin:0;font-size:clamp(2.1rem,7vw,3.7rem);line-height:1.25;letter-spacing:-.05em}.lead{font-size:1.18rem;margin:22px 0 28px;color:#edf7f7}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.primary,.secondary{min-height:58px;border:0;border-radius:14px;padding:14px 22px;font:inherit;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}.primary{background:#ffd34d;color:#1d2c3a}.secondary{background:white;color:var(--navy)}.quick{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:repeat(4,1fr);max-width:900px;margin:-1px auto 0;background:white;border-bottom:1px solid var(--line);box-shadow:0 6px 20px #17364a17}.quick a{padding:14px 6px;text-align:center;text-decoration:none;font-weight:800;font-size:.82rem}.quick b{display:block;width:28px;height:28px;line-height:28px;border-radius:50%;margin:0 auto 3px;background:var(--teal);color:white;font-size:.85rem}main{max-width:900px;margin:auto;padding:28px 20px 80px}.step{background:white;border:1px solid var(--line);border-radius:24px;padding:30px;margin:0 0 24px;box-shadow:0 8px 30px #17364a0c}.step.featured{border:3px solid var(--teal)}.step-title{display:flex;align-items:center;gap:16px}.step-title>span{display:grid;place-items:center;flex:none;width:56px;height:56px;border-radius:18px;background:var(--teal);color:white;font-size:1.55rem;font-weight:900}.step-title p{margin:0;color:var(--teal);font-size:.92rem;font-weight:800}.step h2{font-size:1.65rem;line-height:1.3;margin:0;letter-spacing:-.03em}.summary{font-size:1.08rem}.install-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.install-card{text-align:center;border:2px solid var(--line);border-radius:20px;padding:22px}.install-card h3{font-size:1.25rem;margin:0}.install-card p{color:var(--muted);margin:0 0 12px}.install-card img{display:block;width:min(190px,80%);margin:0 auto 18px}.install-card a{display:block;background:var(--navy);color:#fff;padding:15px 10px;border-radius:12px;text-decoration:none;font-weight:800}.big-list{list-style:none;counter-reset:item;margin:25px 0;padding:0}.big-list li{counter-increment:item;position:relative;margin:0;padding:18px 10px 18px 62px;border-bottom:1px solid var(--line);font-size:1.08rem}.big-list li:before{content:counter(item);position:absolute;left:6px;top:17px;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#e5f2f1;color:#086963;font-weight:900}.notice,.tip{background:var(--yellow);border-radius:16px;padding:17px 20px;margin:22px 0;font-size:1.05rem}details{border-top:1px solid var(--line);margin-top:22px;padding-top:15px}summary{cursor:pointer;font-weight:900;color:var(--teal);font-size:1.08rem;padding:10px 0}details img{display:block;width:100%;height:auto;border-radius:12px;margin-top:12px}.help{background:var(--navy);color:white;border-radius:24px;padding:30px}.help h2{font-size:1.55rem;margin-top:0}.help p{padding:12px 0;margin:0;border-bottom:1px solid #ffffff30}.help a{color:#fff4a8;font-weight:900}.help .small{font-size:.88rem;color:#d6e2e6;border:0}.top{position:fixed;right:16px;bottom:16px;background:var(--teal);color:#fff;text-decoration:none;border-radius:999px;padding:12px 16px;font-weight:800;box-shadow:0 4px 15px #17364a55}.large-text{font-size:22px}.large-text .quick span{display:none}.large-text .quick a{font-size:.95rem}@media(max-width:640px){.hero-inner{padding:42px 20px 38px}.quick a{font-size:.72rem}.step{padding:23px 18px;border-radius:20px}.install-grid{grid-template-columns:1fr}.big-list li{padding-left:56px}.top{font-size:.82rem}.large-text{font-size:20px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* 기본 모드는 간결하게, 큰 글자 모드는 충분히 크게 구분합니다. */
+:root{font-size:17px}
+body{line-height:1.58}
+.hero-inner{padding:48px 24px 40px}
+.lead{font-size:1.08rem;margin:16px 0 22px}
+.primary,.secondary{min-height:52px;padding:12px 20px}
+.quick a{padding:10px 5px;font-size:.78rem}
+.quick b{width:26px;height:26px;line-height:26px;margin-bottom:2px;font-size:.8rem}
+main{padding:22px 20px 72px}
+.step{padding:24px;margin-bottom:18px;border-radius:22px}
+.step-title{gap:13px}
+.step-title>span{width:48px;height:48px;border-radius:15px;font-size:1.35rem}
+.step h2{font-size:1.5rem}
+.summary{font-size:1rem;margin:12px 0}
+.install-grid{gap:14px;margin:14px 0 18px}
+.install-card{padding:16px;border-radius:18px}
+.install-card h3{font-size:1.12rem}
+.install-card p{margin-bottom:8px}
+.install-card img{width:min(150px,68%);margin-bottom:12px}
+.install-card a{padding:12px 8px}
+.big-list{margin:16px 0}
+.big-list li{padding:12px 8px 12px 52px;font-size:1rem;line-height:1.5}
+.big-list li:before{top:11px;width:32px;height:32px}
+.notice,.tip{padding:13px 16px;margin:16px 0;font-size:1rem}
+details{margin-top:16px;padding-top:10px}
+summary{font-size:1rem;padding:8px 0}
+.help{padding:24px;border-radius:22px}
+.help p{padding:10px 0}
+
+.large-text{font-size:22px;line-height:1.75}
+.large-text .hero-inner{padding:56px 24px 48px}
+.large-text .lead{font-size:1.18em;margin:22px 0 28px}
+.large-text .primary,.large-text .secondary{min-height:60px;padding:15px 22px}
+.large-text .quick a{padding:14px 6px;font-size:.95rem}
+.large-text main{padding-top:28px}
+.large-text .step{padding:30px;margin-bottom:24px}
+.large-text .step-title{gap:16px}
+.large-text .step-title>span{width:58px;height:58px;font-size:1.55em}
+.large-text .step h2{font-size:1.55em}
+.large-text .summary{font-size:1.08em;margin:18px 0}
+.large-text .install-grid{gap:18px;margin:22px 0}
+.large-text .install-card{padding:22px}
+.large-text .install-card h3{font-size:1.18em}
+.large-text .install-card img{width:min(190px,80%);margin-bottom:18px}
+.large-text .install-card a{padding:15px 10px}
+.large-text .big-list{margin:25px 0}
+.large-text .big-list li{padding:18px 10px 18px 62px;font-size:1.05em;line-height:1.75}
+.large-text .big-list li:before{top:17px;width:38px;height:38px}
+.large-text .notice,.large-text .tip{padding:17px 20px;margin:22px 0;font-size:1.02em}
+.large-text details{margin-top:22px;padding-top:15px}
+.large-text summary{font-size:1.05em;padding:10px 0}
+
+@media(max-width:640px){
+  .hero-inner{padding:34px 18px 30px}
+  .hero h1{font-size:2rem}
+  .lead{margin:14px 0 18px}
+  .primary,.secondary{min-height:48px;padding:10px 16px}
+  .quick a{font-size:.68rem}
+  main{padding:18px 14px 64px}
+  .step{padding:19px 15px;margin-bottom:14px;border-radius:18px}
+  .step-title>span{width:44px;height:44px}
+  .install-grid{gap:12px}
+  .install-card{padding:14px}
+  .install-card img{width:min(138px,58%)}
+  .big-list li{padding:10px 6px 10px 48px;line-height:1.45}
+  .big-list li:before{top:9px;width:30px;height:30px}
+  .top{font-size:.78rem}
+  .large-text{font-size:20px}
+  .large-text .hero-inner{padding:42px 20px 38px}
+  .large-text .hero h1{font-size:2.25rem}
+  .large-text main{padding:24px 18px 76px}
+  .large-text .step{padding:24px 19px;margin-bottom:22px;border-radius:20px}
+  .large-text .install-card{padding:20px}
+  .large-text .install-card img{width:min(190px,78%)}
+  .large-text .big-list li{padding:17px 8px 17px 58px;line-height:1.75}
+  .large-text .big-list li:before{top:16px;width:36px;height:36px}
+}
