@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+  <meta name="theme-color" content="#17364a">
+  <meta name="description" content="아이파킹 앱 설치부터 입주민 신청, 방문차량 예약까지 큰 글씨로 안내합니다.">
+  <title>아이파킹 방문차량 예약 안내</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#guide">사용 안내로 바로가기</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">입주민용 쉬운 안내</p>
+      <h1>방문차량 예약,<br>천천히 따라 해보세요</h1>
+      <p class="lead">아이파킹 앱 설치부터 방문차량 등록까지<br>화면 순서대로 안내해 드립니다.</p>
+      <div class="hero-actions">
+        <a class="primary" href="#step1">처음부터 따라하기</a>
+        <button id="fontButton" class="secondary" type="button" aria-pressed="false">글자 크게 보기</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="quick" aria-label="사용 순서">
+    <a href="#step1"><b>1</b><span>앱 설치</span></a>
+    <a href="#step2"><b>2</b><span>입주민 신청</span></a>
+    <a href="#step3"><b>3</b><span>방문차량 예약</span></a>
+    <a href="#step4"><b>4</b><span>비밀번호 설정</span></a>
+  </nav>
+
+  <main id="guide">
+    <section id="step1" class="step">
+      <div class="step-title"><span>1</span><div><p>첫 번째</p><h2>아이파킹 앱 설치</h2></div></div>
+      <p class="summary">사용하는 휴대전화에 맞는 버튼을 누르거나 QR코드를 촬영하세요.</p>
+      <div class="install-grid">
+        <article class="install-card android">
+          <h3>안드로이드 휴대전화</h3>
+          <p>삼성 갤럭시 등</p>
+          <img src="assets/qr-android.svg" alt="아이파킹 안드로이드 앱 설치 QR코드">
+          <a href="https://play.google.com/store/apps/details?id=kr.co.iparking.android">Google Play에서 설치</a>
+        </article>
+        <article class="install-card ios">
+          <h3>아이폰</h3>
+          <p>Apple iPhone</p>
+          <img src="assets/qr-ios.svg" alt="아이파킹 아이폰 앱 설치 QR코드">
+          <a href="https://apps.apple.com/kr/app/id978597106">App Store에서 설치</a>
+        </article>
+      </div>
+      <ol class="big-list">
+        <li><b>설치</b> 버튼을 누릅니다.</li>
+        <li>설치가 끝나면 <b>열기</b>를 누릅니다.</li>
+        <li>화면 아래 <b>마이페이지</b>를 누릅니다.</li>
+        <li><b>로그인 또는 회원가입</b>을 누릅니다.</li>
+      </ol>
+      <details><summary>화면 예시 크게 보기</summary><img src="assets/manual-app.png" alt="아이파킹 앱 설치와 회원가입 화면 안내"></details>
+    </section>
+
+    <section id="step2" class="step">
+      <div class="step-title"><span>2</span><div><p>두 번째</p><h2>입주민 신청</h2></div></div>
+      <div class="notice"><b>처음 한 번만 신청합니다.</b><br>신청 후 관리사무소의 승인이 필요합니다.</div>
+      <ol class="big-list">
+        <li><b>마이페이지</b>에서 <b>입주민 신청하기</b>를 누릅니다.</li>
+        <li>거주지 검색창에 <b>아파트 이름 또는 주소</b>를 입력합니다.</li>
+        <li>검색 결과에서 <b>우리 아파트</b>를 선택합니다.</li>
+        <li><b>동·호와 입주민 정보</b>를 입력하고 신청합니다.</li>
+        <li>관리실 승인 후 앱 홈에서 승인 여부를 확인합니다.</li>
+      </ol>
+      <details><summary>화면 예시 크게 보기</summary><img src="assets/manual-resident.png" alt="아이파킹 입주민 신청 화면 안내"></details>
+    </section>
+
+    <section id="step3" class="step featured">
+      <div class="step-title"><span>3</span><div><p>자주 사용하는 기능</p><h2>방문차량 예약</h2></div></div>
+      <ol class="big-list">
+        <li>앱 홈에서 <b>입주민 방문차량</b>을 누릅니다.</li>
+        <li><b>방문차량 예약</b>을 누릅니다.</li>
+        <li><b>차량번호</b> 예약을 선택합니다.</li>
+        <li><b>방문 예정일</b>과 차량번호를 입력합니다.</li>
+        <li>방문목적·긴급연락처·방문 동수와 구역을 선택합니다.</li>
+        <li><b>등록</b>을 누르고 예약 완료 화면을 확인합니다.</li>
+      </ol>
+      <p class="tip">예약 완료 후 <b>공유하기</b>를 누르면 방문객에게 예약 정보를 보낼 수 있습니다.</p>
+      <details open><summary>예약 화면 예시 보기</summary><img src="assets/manual-reservation.png" alt="아이파킹 방문차량 예약 화면 안내"></details>
+    </section>
+
+    <section id="step4" class="step">
+      <div class="step-title"><span>4</span><div><p>키오스크가 있는 단지만</p><h2>방문 키오스크 비밀번호</h2></div></div>
+      <ol class="big-list">
+        <li><b>입주민 방문차량</b>에서 예약내역을 누릅니다.</li>
+        <li><b>방문 키오스크</b> 탭을 선택합니다.</li>
+        <li><b>세대 방문 키오스크 비밀번호 재설정</b>을 누릅니다.</li>
+        <li>사용할 <b>숫자 4자리</b>를 입력하고 재설정합니다.</li>
+      </ol>
+      <details><summary>화면 예시 크게 보기</summary><img src="assets/manual-kiosk.png" alt="아이파킹 방문 키오스크 비밀번호 설정 화면 안내"></details>
+    </section>
+
+    <section class="help">
+      <h2>잘 안 될 때 확인하세요</h2>
+      <p><b>아파트 검색이나 입주민 승인</b><br>관리사무소에 문의해 주세요.</p>
+      <p><b>앱 설치·로그인·작동 문의</b><br><a href="tel:15885783">아이파킹 고객센터 1588-5783</a></p>
+      <p class="small">무료 주차시간과 방문 허용 기준은 단지 운영 방침에 따라 다릅니다. 앱 업데이트에 따라 화면 위치나 이름이 달라질 수 있습니다.</p>
+    </section>
+  </main>
+
+  <a class="top" href="#">맨 위로</a>
+  <script src="app.js"></script>
+</body>
+</html>
