@@ -96,10 +96,25 @@ function renderGallery(container) {
     if (Math.abs(distance) > 45) update();
   }, { passive: true });
 
+  container.addEventListener('reset-gallery', () => {
+    current = 0;
+    update();
+  });
+
   update();
 }
 
 document.querySelectorAll('.screen-gallery').forEach(renderGallery);
+
+document.querySelectorAll('details').forEach((details) => {
+  const summary = details.querySelector('summary');
+  const updateSummary = () => {
+    summary.textContent = details.open ? '화면예시 접기' : '모바일 화면 예시 보기';
+    if (details.open) details.querySelector('.screen-gallery')?.dispatchEvent(new Event('reset-gallery'));
+  };
+  details.addEventListener('toggle', updateSummary);
+  updateSummary();
+});
 
 const viewer = document.createElement('div');
 viewer.className = 'image-viewer';
